@@ -7,7 +7,7 @@ namespace App\Repository\Task;
 use App\Models\Task;
 use Illuminate\Http\Request;
 
-class RedistTaskRepository implements TaskRepository
+class RedisTaskRepository implements TaskRepository
 {
 
     public function createTask(Request $request)
@@ -25,12 +25,12 @@ class RedistTaskRepository implements TaskRepository
         // TODO: Implement getTasksById() method.
     }
 
-    public function updateTask(Task $task, Request $request)
+    public function updateTask(Request $request, $id)
     {
         // TODO: Implement updateTask() method.
     }
 
-    public function setAsFinish(Task $task)
+    public function setAsFinish($id)
     {
         // TODO: Implement setAsFinish() method.
     }

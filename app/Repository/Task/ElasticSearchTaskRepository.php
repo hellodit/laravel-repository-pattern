@@ -2,31 +2,52 @@
 
 namespace App\Repository\Task;
 use App\Models\Task;
+use Illuminate\Http\Request;
 
 class ElasticSearchTaskRepository implements TaskRepository
 {
 
-    public function createTask()
+    /**
+     * @param Request $request
+     * @return mixed
+     */
+    public function createTask(Request $request)
     {
         // TODO: Implement createTask() method.
     }
 
+    /**
+     * @return mixed
+     */
     public function getTasks()
     {
         // TODO: Implement getTasks() method.
     }
 
+    /**
+     * @param $id
+     * @return mixed
+     */
     public function getTasksById($id)
     {
         // TODO: Implement getTasksById() method.
     }
 
-    public function updateTask(Task $task)
+    /**
+     * @param Request $request
+     * @param $id
+     * @return mixed
+     */
+    public function updateTask(Request $request, $id)
     {
         // TODO: Implement updateTask() method.
     }
 
-    public function setAsFinish(Task $task)
+    /**
+     * @param $id
+     * @return mixed
+     */
+    public function setAsFinish($id)
     {
         // TODO: Implement setAsFinish() method.
     }
