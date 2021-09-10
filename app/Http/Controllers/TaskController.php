@@ -34,6 +34,8 @@ class TaskController extends Controller
     }
 
     public function update(Request $request, $id){
+
+// its ok.but it breaks single responsibilities principle. create a form validation file and place everything there.
         $validator = Validator::make($request->all(), [
             'name' => 'required',
             'description' => 'required',

@@ -17,6 +17,8 @@ class CommentController extends Controller
     }
 
     public function storeComment(Request $request, $task_id){
+
+// its ok.but it breaks single responsibilities principle. create a form validation file and place everything there.
         $validator = Validator::make($request->all(), [
             'name' => 'required|max:255',
             'description' => 'required',
